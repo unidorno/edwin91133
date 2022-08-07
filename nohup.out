@@ -1,0 +1,45 @@
+[+] 
+ _______  _______  _______  _______  _______  _        ______   _______    ______   _______ _________
+(  ____ \(  ___  )(       )(       )(  ___  )( (    /|(  __  \ (  ____ \  (  ___ \ (  ___  )\__   __/
+| (    \/| (   ) || () () || () () || (   ) ||  \  ( || (  \  )| (    \/  | (   ) )| (   ) |   ) (   
+| |      | |   | || || || || || || || (___) ||   \ | || |   ) || (_____   | (__/ / | |   | |   | |   
+| |      | |   | || |(_)| || |(_)| ||  ___  || (\ \) || |   | |(_____  )  |  __ (  | |   | |   | |   
+| |      | |   | || |   | || |   | || (   ) || | \   || |   ) |      ) |  | (  \ \ | |   | |   | |   
+| (____/\| (___) || )   ( || )   ( || )   ( || )  \  || (__/  )/\____) |  | )___) )| (___) |   | |   
+(_______/(_______)|/     \||/     \||/     \||/    )_)(______/ \_______)  |/ \___/ (_______)   )_(   
+                                                                                                     
+
+
+DEBUG:[main.py:29]:2022-06-02 10:46:34,230: Running without proxy
+DEBUG:[main.py:37]:2022-06-02 10:46:37,628: Setting up event handlers
+DEBUG:[main.py:66]:2022-06-02 10:46:37,629: Events handlers setup complete
+INFO:[main.py:75]:2022-06-02 10:46:37,629: deals911_bot is up!
+[+] 
+ _______  _______  _______  _______  _______  _        ______   _______    ______   _______ _________
+(  ____ \(  ___  )(       )(       )(  ___  )( (    /|(  __  \ (  ____ \  (  ___ \ (  ___  )\__   __/
+| (    \/| (   ) || () () || () () || (   ) ||  \  ( || (  \  )| (    \/  | (   ) )| (   ) |   ) (   
+| |      | |   | || || || || || || || (___) ||   \ | || |   ) || (_____   | (__/ / | |   | |   | |   
+| |      | |   | || |(_)| || |(_)| ||  ___  || (\ \) || |   | |(_____  )  |  __ (  | |   | |   | |   
+| |      | |   | || |   | || |   | || (   ) || | \   || |   ) |      ) |  | (  \ \ | |   | |   | |   
+| (____/\| (___) || )   ( || )   ( || )   ( || )  \  || (__/  )/\____) |  | )___) )| (___) |   | |   
+(_______/(_______)|/     \||/     \||/     \||/    )_)(______/ \_______)  |/ \___/ (_______)   )_(   
+                                                                                                     
+
+
+DEBUG:[main.py:29]:2022-06-02 10:46:45,092: Running without proxy
+Traceback (most recent call last):
+  File "telegram-announce-greet-bot-2/main.py", line 79, in <module>
+    bot.start(bot_token=config.TELEGRAM_BOT_TOKEN)
+  File "/root/anaconda3/lib/python3.7/site-packages/telethon/client/auth.py", line 133, in start
+    else self.loop.run_until_complete(coro)
+  File "/root/anaconda3/lib/python3.7/asyncio/base_events.py", line 584, in run_until_complete
+    return future.result()
+  File "/root/anaconda3/lib/python3.7/site-packages/telethon/client/auth.py", line 140, in _start
+    await self.connect()
+  File "/root/anaconda3/lib/python3.7/site-packages/telethon/client/telegrambaseclient.py", line 536, in connect
+    self.session.auth_key = self._sender.auth_key
+  File "/root/anaconda3/lib/python3.7/site-packages/telethon/sessions/sqlite.py", line 180, in auth_key
+    self._update_session_table()
+  File "/root/anaconda3/lib/python3.7/site-packages/telethon/sessions/sqlite.py", line 194, in _update_session_table
+    c.execute('delete from sessions')
+sqlite3.OperationalError: database is locked

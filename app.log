@@ -1,0 +1,5 @@
+DEBUG:[main.py:29]:2022-06-02 10:46:34,230: Running without proxy
+DEBUG:[main.py:37]:2022-06-02 10:46:37,628: Setting up event handlers
+DEBUG:[main.py:66]:2022-06-02 10:46:37,629: Events handlers setup complete
+INFO:[main.py:75]:2022-06-02 10:46:37,629: deals911_bot is up!
+DEBUG:[main.py:29]:2022-06-02 10:46:45,092: Running without proxy
